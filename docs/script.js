@@ -7,34 +7,16 @@ const nextButton = document.getElementById("next");
 let index = 0;
 */
 
-/*
-document.addEventListener('DOMContentLoaded', function() {
-  const blockquote = document.querySelector('.imgur-embed-pub');
+document.addEventListener("DOMContentLoaded", function () {
+  const blockquote = document.querySelector(".imgur-embed-pub");
 
   if (blockquote) {
-    blockquote.querySelectorAll('a[href^="//imgur.com"]').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-      });
+    blockquote.querySelectorAll('a[href^="//imgur.com"]').forEach((link) => {
+      link.setAttribute("href", "javascript:void(0);"); // Remove o redirecionamento mantendo somente a interação
+      link.style.pointerEvents = "none"; // Desativa os eventos de clique nos links
     });
   }
 });
-*/
-
-/*
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.imgur-embed-pub a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && href.startsWith('//imgur.com')) {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-      });
-    }
-  });
-});
-*/
 
 /*
 nextButton.addEventListener("click", () => {
