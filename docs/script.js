@@ -10,7 +10,6 @@ let index = 0;
 document.addEventListener('DOMContentLoaded', function() {
   const blockquote = document.querySelector('.imgur-embed-pub');
 
-  // Bloqueia apenas os links de redirecionamento
   if (blockquote) {
     blockquote.querySelectorAll('a[href^="//imgur.com"]').forEach(link => {
       link.addEventListener('click', function(event) {
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
-  
+});
 /*
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.imgur-embed-pub a').forEach(link => {
