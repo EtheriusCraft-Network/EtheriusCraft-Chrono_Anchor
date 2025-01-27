@@ -71,7 +71,7 @@
 
 # ㅤㅤㅤㅤㅤㅤㅤ  EtheriusCraft — Network
 # ㅤㅤㅤㅤㅤㅤㅤ  Termos de Uso e Licença
-## ㅤㅤㅤㅤㅤㅤㅤㅤㅤ      Última Atualização: ``30/12/2024``
+## ㅤㅤㅤㅤㅤㅤㅤㅤㅤ     Última Atualização: ``30/12/2024``
 ## 1.	Introdução
 Bem-vindo à **EtheriusCraft — Network**! Este termo regula o uso de todos os conteúdos, serviços e produtos associados à franquia EtheriusCraft, incluindo jogos, servidores online, DLCs, atualizações, e quaisquer outros serviços oferecidos sob este nome.
 Ao acessar ou utilizar qualquer parte da **EtheriusCraft — Network**, você concorda em cumprir integralmente os termos descritos abaixo. Caso não concorde com os termos, pedimos que não utilize os serviços e produtos oferecidos.
