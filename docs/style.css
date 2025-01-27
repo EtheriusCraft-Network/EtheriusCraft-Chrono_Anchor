@@ -8,12 +8,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
+/*
 .blockquote a {
   pointer-events: none;
   cursor: default;
 }
-
+*/
 .content {
   flex: 1;
   display: flex;
