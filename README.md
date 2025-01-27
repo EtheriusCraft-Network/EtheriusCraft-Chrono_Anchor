@@ -1,4 +1,60 @@
-# EtheriusCraft — Chrono Anchor
+<header>
+  <div align="center">
+    <img src="https://i.imgur.com/Fp3B4gR.jpg" height="30%" width="30%" alt="EtheriusCraft — Chrono Anchor">
+    <!--  <img src="https://imgur.com/17Wr3dC.png" height="30%" width="30%" alt="EtheriusCraft — Network"> -->
+    <!-- ![EtheriusCraft — Network](https://i.imgur.com/X1gSnbb.png) -->
+  </div>
+  
+  <div align="center"><h1>EtheriusCraft — Chrono Anchor</h1></div>
+</header>
+
+> [!NOTE]
+> *"Erros nos Cálculos! Um desastre iminente está por vir!"*
+> *"O mundo está sendo levado a um estado caótico, encontrando-se agora atrelado entre o passado e o futuro."*
+> *"O tempo colidirá consigo mesmo, trazendo uma nova era para este mundo..."*
+> *"O mundo é vasto, belo e misterioso... Uma nova era surge depois dos dinossauros, mas agora irá de encontro a isso como uma âncora temporal que fixa-se ao passado"* **— Disse um Cientista profetizando um desastre iminente ao mundo.**
+>
+> **CHRONO ANCHOR**, um mundo ressurgindo em meio a caótica **Colisão** de um desastre provida **do Tempo**.
+>
+> Bem-vindos a **Chrono Anchor**, onde passado e futuro se encontram numa colisão de eras!
+> Preparem-se para uma jornada épica em um mundo onde **magia, tecnologia steampunk e aventuras medievais** se entrelaçam em um emaranhado temporal.
+> **Descubra segredos antigos, enfrente criaturas místicas, desbrave novos mundos, conquiste planetas, dome os destemidos dinossauros, domine o poder mágico e construa civilizações além da imaginação!**
+> Tudo pode acontecer neste universo onde uma âncora temporal aguarda os destemidos exploradores! Você está preparado para essa aventura!?
+>
+> Reúna seus amigos, forme clãs e equipes, refine suas habilidades de sobrevivência e venha conosco desbravar as terras desconhecidas e mundos desse incrível modpack no nosso servidor!
+> Seja o herói que o tempo espera e marque seu nome na história de **Chrono Anchor**!
+> O que tá esperando? Fixe sua Âncora Temporal e venha navegar neste universo misterioso!
+
+## Descrição
+> [!NOTE]
+> Modpack focado em uma mecânica única onde buscamos abordar conceitos das **novas versões** e trazemos à tona para **1.7.10!** Junto com mecânicas conhecidas por muitos modpacks estilo "**A Era do Futuro**".
+    
+### Mecânicas
+> [!WARNING]
+> - Mods
+>
+> Em nosso modpack o que mais encontrará serão:
+> 1. Quests customizados & interativos
+> 1. Itens, blocos e armaduras exclusivas! 
+> - Servidor
+>
+> Os mods terão suas mecânicas alteradas para se adaptar ao modpack, sendo elas:
+> 1. Crafts 100% alterados
+> 1. Sistema de rituais & crafts únicos
+> 1. Sistema de forja
+
+> [!IMPORTANT]
+> **Desenvolvido pela** ``EtheriusCraft — Network``!                                                                                                 
+> **Criadores:** ``YukiriDensuki & RyutaSK``.
+>     
+> ### Considere entrar em nosso [DISCORD](https://discord.gg/7KAvZgztgu)!
+<footer>
+  <div align="center">
+    <img src="https://imgur.com/17Wr3dC.png" height="30%" width="30%" alt="EtheriusCraft — Network">
+    <p style="color:purple;"><strong><em>EtheriusCraft — Network • © Todos os direitos reservados.</em></strong></p>
+  </div>
+</footer>
+
 # Termos de Uso e Licença de **EtheriusCraft — Network**
 ## Última Atualização: ``30/12/2024``
 ## 1.	Introdução
