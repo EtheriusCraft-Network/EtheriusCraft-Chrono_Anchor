@@ -10,7 +10,7 @@
 <div>
   <div align="center">
       <h3>
-        <img src="https://img.shields.io/badge/Modpack-EtheriusCraft—_Chrono_Anchor-purple.svg">
+        <img src="https://img.shields.io/badge/Modpack-EtheriusCraft_—_Chrono_Anchor-purple.svg">
         <img src="https://img.shields.io/badge/Tema-AEDF-blue.svg"> 
         <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-green.svg">
         <img src="https://img.shields.io/badge/Versão-1.7.10-yellow.svg">
