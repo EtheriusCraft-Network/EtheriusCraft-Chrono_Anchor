@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
 /*
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.imgur-embed-pub a').forEach(link => {
