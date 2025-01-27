@@ -1,4 +1,5 @@
 <header>
+    <div align="center"> <strong>Contador de Visitantes</strong> <br> <img src="https://profile-counter.glitch.me/EtheriusCraft-Chrono_Anchor/count.svg" /> </div>
   <div align="center">
     <img src="https://i.imgur.com/Fp3B4gR.jpg" height="30%" width="30%" alt="EtheriusCraft — Chrono Anchor">
     <!--  <img src="https://imgur.com/17Wr3dC.png" height="30%" width="30%" alt="EtheriusCraft — Network"> -->
@@ -6,6 +7,15 @@
   </div>
   
   <div align="center"><h1>EtheriusCraft — Chrono Anchor</h1></div>
+<div>
+  <div align="center">
+      <h3>
+        <img src="https://img.shields.io/badge/Modpack-EtheriusCraft—_Chrono_Anchor-purple.svg">
+        <img src="https://img.shields.io/badge/Tema-AEDF-blue.svg"> 
+        <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-green.svg">
+        <img src="https://img.shields.io/badge/Versão-1.7.10-yellow.svg">
+      </h3>
+  </div><hr>
 </header>
 
 > [!NOTE]
