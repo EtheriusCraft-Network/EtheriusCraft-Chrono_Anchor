@@ -10,11 +10,7 @@ body {
   align-items: center;
 }
 
-.blockquote a {
-  pointer-events: none;
-  cursor: default;
-}
-
+.blockquote a,
 .imgur-embed-pub a {
   pointer-events: none !important;
   cursor: default;
@@ -51,17 +47,30 @@ footer {
   width: 100%;
   max-width: 500px;
   height: auto;
-  /*clip-path: inset(92.5px 0 20.5px 1.5px);*/
+  clip-path: inset(16.2% 0 23.8% 0.37%);
+  overflow: hidden;
+  margin: 20px auto;
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   clip-path: inset(16.2% 0 23.7% 0.37%);
   overflow: hidden;
   margin: 100px auto;
   transform: scale(2);
   transition: transform 0.3s ease-in-out;
 }
+*/
 
 @media (max-width: 800px) {
   .carousel {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   footer {
@@ -71,7 +80,8 @@ footer {
 
 @media (max-width: 500px) {
   .carousel {
-    transform: scale(0.9);
+    transform: scale(1);
+    margin: 10px auto;
   }
 
   footer {
