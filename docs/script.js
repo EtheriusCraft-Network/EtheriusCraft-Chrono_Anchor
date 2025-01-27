@@ -5,6 +5,15 @@ const nextButton = document.getElementById("next");
 
 let index = 0;
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".imgur-embed-pub a").forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    });
+  });
+});
+
 nextButton.addEventListener("click", () => {
   if (index < images.length - 1) {
     index++;
