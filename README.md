@@ -48,6 +48,10 @@
 > **Criadores:** ``YukiriDensuki & RyutaSK``.
 >     
 > ### Considere entrar em nosso [DISCORD](https://discord.gg/7KAvZgztgu)!
+> ### Verifique as imagens de Divulgação ao interagir com este link: [Chrono Anchor — Showcase](https://etheriuscraft-network.github.io/EtheriusCraft-Chrono_Anchor/).
+
+> *Imagens meramente ilustrativas. Algumas em versões diferentes e outros mods não inclusos no modpack.
+> *Veracidade das imagens:* **95%.**
 <footer>
   <div align="center">
     <img src="https://imgur.com/17Wr3dC.png" height="30%" width="30%" alt="EtheriusCraft — Network">
