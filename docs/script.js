@@ -5,12 +5,15 @@ const nextButton = document.getElementById("next");
 
 let index = 0;
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".imgur-embed-pub a").forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.imgur-embed-pub a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('//imgur.com')) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+    }
   });
 });
 
