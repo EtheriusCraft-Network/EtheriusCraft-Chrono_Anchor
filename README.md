@@ -69,9 +69,9 @@
   </div>
 </footer>
 
-# ㅤㅤㅤㅤㅤ  EtheriusCraft — Network
-# ㅤㅤㅤㅤㅤ  Termos de Uso e Licença
-## ㅤㅤㅤㅤㅤㅤ      Última Atualização: ``30/12/2024``
+# ㅤㅤㅤㅤㅤㅤㅤㅤ  EtheriusCraft — Network
+# ㅤㅤㅤㅤㅤㅤㅤㅤ  Termos de Uso e Licença
+## ㅤㅤㅤㅤㅤㅤㅤㅤㅤ      Última Atualização: ``30/12/2024``
 ## 1.	Introdução
 Bem-vindo à **EtheriusCraft — Network**! Este termo regula o uso de todos os conteúdos, serviços e produtos associados à franquia EtheriusCraft, incluindo jogos, servidores online, DLCs, atualizações, e quaisquer outros serviços oferecidos sob este nome.
 Ao acessar ou utilizar qualquer parte da **EtheriusCraft — Network**, você concorda em cumprir integralmente os termos descritos abaixo. Caso não concorde com os termos, pedimos que não utilize os serviços e produtos oferecidos.
@@ -121,7 +121,7 @@ Ao utilizar **EtheriusCraft — Network**, você reconhece ter lido, compreendid
 
 Obrigado por fazer parte da nossa comunidade e ajudar a proteger o universo de **EtheriusCraft — Network!** 🌐
 
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ![EtheriusCraft — Chrono Anchor](https://github.com/user-attachments/assets/1830aeb9-1802-419a-b2b8-7993fc5769b5)![EtheriusCraft — Network](https://github.com/user-attachments/assets/18052e1b-13fc-4fbf-87da-9461142bcaed)
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ![EtheriusCraft — Chrono Anchor](https://github.com/user-attachments/assets/1830aeb9-1802-419a-b2b8-7993fc5769b5)![EtheriusCraft — Network](https://github.com/user-attachments/assets/18052e1b-13fc-4fbf-87da-9461142bcaed)
 
 
 
