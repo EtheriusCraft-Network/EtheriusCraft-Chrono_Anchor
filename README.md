@@ -121,7 +121,7 @@ Ao utilizar **EtheriusCraft — Network**, você reconhece ter lido, compreendid
 
 Obrigado por fazer parte da nossa comunidade e ajudar a proteger o universo de **EtheriusCraft — Network!** 🌐
 
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ![EtheriusCraft — Chrono Anchor](https://github.com/user-attachments/assets/1830aeb9-1802-419a-b2b8-7993fc5769b5)![EtheriusCraft — Network](https://github.com/user-attachments/assets/18052e1b-13fc-4fbf-87da-9461142bcaed)
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ![EtheriusCraft — Chrono Anchor](https://github.com/user-attachments/assets/1830aeb9-1802-419a-b2b8-7993fc5769b5)![EtheriusCraft — Network](https://github.com/user-attachments/assets/18052e1b-13fc-4fbf-87da-9461142bcaed)
 
 
 
