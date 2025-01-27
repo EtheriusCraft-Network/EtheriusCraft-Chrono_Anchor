@@ -7,6 +7,7 @@ const nextButton = document.getElementById("next");
 let index = 0;
 */
 
+/*
 document.addEventListener('DOMContentLoaded', function() {
   const blockquote = document.querySelector('.imgur-embed-pub');
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+*/
 
 /*
 document.addEventListener('DOMContentLoaded', function() {
