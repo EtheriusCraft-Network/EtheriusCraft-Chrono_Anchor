@@ -32,7 +32,7 @@
 > Tudo pode acontecer neste universo onde uma âncora temporal aguarda os destemidos exploradores! Você está preparado para essa aventura!?
 >
 > Reúna seus amigos, forme clãs e equipes, refine suas habilidades de sobrevivência e venha conosco desbravar as terras desconhecidas e mundos desse incrível modpack no nosso servidor!
-> Seja o herói que o tempo espera e marque seu nome na história de **Chrono Anchor**!
+> Seja o herói que o tempo espera e marque seu nome na história de **Chrono Anchor**!<br>
 > O que tá esperando? Fixe sua Âncora Temporal e venha navegar neste universo misterioso!
 
 ## Descrição
