@@ -21,7 +21,7 @@
 > [!NOTE]
 > *"Erros nos Cálculos! Um desastre iminente está por vir!"*<br>
 > *"O mundo está sendo levado a um estado caótico, encontrando-se agora atrelado entre o passado e o futuro."*<br>
-> *"O tempo colidirá consigo mesmo, trazendo uma nova era para este mundo..."*<br>
+> *"O tempo colidirá com si mesmo, trazendo uma nova era para este mundo..."*<br>
 > *"O mundo é vasto, belo e misterioso... Uma nova era surge depois dos dinossauros, mas agora irá de encontro a isso como uma âncora temporal que fixa-se ao passado"* **— Disse um Cientista profetizando um desastre iminente ao mundo.**<br>
 >
 > **CHRONO ANCHOR**, um mundo ressurgindo em meio a caótica **Colisão** de um desastre provida **do Tempo**.
