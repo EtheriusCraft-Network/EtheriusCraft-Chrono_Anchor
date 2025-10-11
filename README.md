@@ -1,7 +1,7 @@
 <header>
     <!--  <div align="center"> <strong>Contador de Visitantes</strong> <br> <img src="https://profile-counter.glitch.me/EtheriusCraft-Chrono_Anchor/count.svg" /> </div> -->
   <div align="center">
-    <!--  <img src="https://i.imgur.com/Fp3B4gR.jpg" height="30%" width="30%" alt="EtheriusCraft — Chrono Anchor"> -->
+    <img src="https://i.imgur.com/Fp3B4gR.jpg" height="30%" width="30%" alt="EtheriusCraft — Chrono Anchor">
     <!--  <img src="https://imgur.com/17Wr3dC.png" height="30%" width="30%" alt="EtheriusCraft — Network"> -->
     <!-- ![EtheriusCraft — Network](https://i.imgur.com/X1gSnbb.png) -->
   </div>
