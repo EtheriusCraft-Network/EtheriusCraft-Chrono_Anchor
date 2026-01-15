@@ -1,154 +1,3 @@
-<!-- ARQUIVO DESTINADO PARA TESTES DE MODELO MARKDOWN -->
-
----
-
-## ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ💡 Features & Alterações:
-
-### 🧩 『MODS』
-
-#### ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ``Otimização & Ajustes``
-
-#### ⚙️ OTIMIZAÇÃO — Geral
-
-🧠 @Densuki
-> Mod dedicado exclusivamente à otimização do servidor.
-
-- Reconfigurado para evitar conflitos com o Mekanism
-- Ajustes relacionados ao carregamento de:
-  - chunks
-  - entidades
-- 🎯 Objetivo:
-  - Carregar o mapa apenas quando necessário
-  - Priorizar jogadores e Chunk Loaders controlados
-  - Evitar chunks sempre ativos de forma natural
-
----
-
-#### 🛑 OTIMIZAÇÃO — Alerta de Log (não crítico)
-
-##### ⚠️ Mensagem frequente:
-```md
-Minecraft loaded a new chunk [X Pos, Z Pos] in dimension 0 while populating chunk [X Pos, Z Pos]
-```
-
-
-#### 🔧 fixVanillaCascadingWorldgen
-- Corrige cascading worldgen no vanilla
-- Pode afetar compatibilidade de seeds
-
-💬 @Densuki  
-> Não é um erro crítico, mas flooda o console e logs.  
-> Mantido para debug (sim, sou contraditório 😅).
-
----
-
-#### 🔁 OTIMIZAÇÃO — Mudanças de Configuração
-
-##### 🛡️ increaseMobArmor
-- Aumenta a média de armadura dos mobs
-- Balanceamento progressivo
-
----
-
-##### ⏳ betterRegionalDifficulty
-- Substitui a dificuldade regional do vanilla
-- Baseada no tempo de jogo do jogador
-- Inspirada no Too Many Caves and Wells (TMCW)
-
-💬 **I.A. - Virturoid Lilith**  
-> Aumenta a dificuldade progressivamente.  
-> Interessante para servidores longos, mas não é puramente otimização.
-
----
-
-##### 🌍 disableSpawnChunks
-> Desativa chunks sempre carregados.
-
-##### Quando descarregados:
-- Máquinas de mods param
-- Farms automáticos param
-- Redstone congela
-- Plantações não crescem
-- Fornalhas não fundem
-
-##### Jogadores
-- Sempre carregam chunks ao redor
-- Raio depende do view-distance
-- Planejado: 8–16 chunks
-
-##### Chunk Loaders
-- Continuam funcionando
-- Tempo de uso limitado
-
-💬 **I.A. - Virturoid Lilith**  
-> Pode quebrar farms dependentes de spawn chunks.
-
----
-
-##### 🎨 enableNewButtonAppearance
-- Visual moderno (1.14+)
-- Remove destaque amarelo ao hover
-
----
-
-##### 🌿 modernizeTextures
-- Atualiza textura da grama alta
-
----
-
-#### 🧠 OTIMIZAÇÃO — Entidades
-
-##### 🧍 optimizeEntityTicking
-- Impede ticking de entidades distantes
-- Atua como segundo controle de distância
-
-Valores testados:
-- 4096 → 64 blocos (padrão)
-- 2304 → ~48 blocos (atual)
-
-##### 📊 Comparação
-
-<table>
-	<thead>
-		<tr>
-			<th>🔢 Valor</th> <th>📏 Raio (blocos)</th> <th>🗺️ Área carregada</th> <th>⚙️ Impacto</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>1024</td> <th>32</td> <th>64×64</td> <th>🔴 Muito agressivo</td>
-		</tr>
-		<tr>
-			<th>2048</td> <th>45</td> <th>90×90</td> <th>🟠 Agressivo</td> 		
-		</tr>
-		<tr>
-			<th>4096</td> <th>64</td> <th>128×128</td> <th>🟡 Padrão</td>
-		</tr>
-		<tr>
-			<th>8192</td> <th>90</td> <th>180×180</td> <th>🟢 Moderado</td>
-		</tr>
-		<tr>
-			<th>16384</td> <th>128</td> <th>256×256</td> <th>🔵 Leve</td>
-		</tr>
-		<tr>
-			<th>65536</td> <th>256</td> <th>512×512</td> <th>⚪ Mínima otimização</td>
-		</tr>
-	</tbody>
-</table>
-
-##### ✔️ Efeitos
-- Reduz carga do servidor
-- Diminui IA ativa
-- Evita farms ocultos
-- Força uso consciente de chunk loaders
-
-##### ⚠️ Possíveis problemas
-- Mobs congelam à distância
-- Combates inconsistentes
-- Agricultura animal afetada
-
-💬 @Densuki
-> Caso 2304 seja agressivo, considerar 16384 ou retorno ao padrão.
 
 ---
 
@@ -157,10 +6,12 @@ Valores testados:
 #### ⚙️ OTIMIZAÇÃO — Geral
 🧠 @Densuki:
 > Foi modificado e otimizado o mod que adiciona sistema de **Física, Gases, Temperatura, Sede, Sanidade** e **Ar** ao modpack.
-> Antigamente muitos cálculos eram feitos no "*Back-End*" do modpack, o que gerava muito lag, principalmente na geração de novas Chunks.
-> Por exemplo, a física era constantemente calculada em menos de 1 tick — 20 segundos — o que causava lag de FPS e, se não bastasse isso...
-> Havia lag também pelos gases que se comportavam como líquidos.
-> Por fim, como "cereja do bolo", era calculado constantemente a geração de novas estruturas, como as novas minas, o que tornava inviável, principalmente em vilas.
+
+- Antigamente muitos cálculos eram feitos no "*Back-End*" do modpack, o que gerava muito lag, principalmente na geração de novas Chunks.
+- Por exemplo, a física era constantemente calculada em menos de 1 tick — 20 segundos — o que causava lag de FPS e, se não bastasse isso...
+- Havia lag também pelos gases que se comportavam como líquidos.
+- Por fim, como "cereja do bolo"...
+- era calculado constantemente a geração de novas estruturas, como as novas minas, o que tornava inviável, principalmente em vilas.
 	
 #### 📊 Funcionalidades
 💬 @Densuki:
@@ -168,51 +19,379 @@ Valores testados:
 > Abaixo estará uma tabela informando a respeito, com nome e descrição.
 	
 <table>
-	<thead>
-		<tr>
-			<th>Cenários</th> <th>Nome</th> <th>1º Intervalo</th> <th>2º Intervalo</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>1º</td> <th>Quebrando bloco de areia</td> <th>6: Cai quase instantaneamente (0.3s)</td> <th>20: Pode levar até 1 segundo para começar a cair</td>
-		</tr>
-		<tr>
-			<th>2º</td> <th>Colapso de caverna</td> <th>6: Vários blocos caem rapidamente, pode causar lag</td> <th>20: Cai em "ondas" mais espaçadas, menos lag</td>
-		</tr>
-		<tr>
-			<th>3º</td> <th>Estrutura complexa caindo</td> <th>6: Tudo cai de uma vez (muito lag)</td> <th>20: Cai gradualmente (lag distribuído)</td>
-		</tr>
-	</tbody>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTabela Principal de Status</h2></caption>
+  <thead>
+    <tr>
+      <th>Nome do Status</th>
+      <th>Descrição</th>
+      <th>Como Adquirir</th>
+      <th>Efeitos no Jogador</th>
+      <th>Como se Livrar</th>
+      <th>Dificuldade de Remoção</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>🌡️ Temperatura</strong>
+      </td>
+      <td>Mede a temperatura corporal do jogador</td>
+      <td>Exposição a ambientes quentes/frios</td>
+      <td>Afeta regeneração, velocidade, pode levar a efeitos mais graves</td>
+      <td>Ir para ambiente com temperatura oposta, usar roupas apropriadas</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💧 Hidratação</strong>
+      </td>
+      <td>Nível de água no corpo</td>
+      <td>Tempo sem beber água, ambientes quentes, atividades físicas</td>
+      <td>Fadiga, visão turva, lentidão, dano se chegar a zero</td>
+      <td>Beber água (garrafa, cantil), água purificada é melhor</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🍖 Saturação</strong>
+      </td>
+      <td>Nível nutricional além da fome</td>
+      <td>Comer alimentos de qualidade</td>
+      <td>Melhora regeneração, resistência a efeitos negativos</td>
+      <td>Comer alimentos nutritivos (carne cozida, etc)</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😰 Estresse</strong>
+      </td>
+      <td>Nível de estresse mental</td>
+      <td>Combate, quedas, danos, ambientes perigosos</td>
+      <td>Tremores, precisão reduzida, pode levar à Insanidade</td>
+      <td>Descansar em lugar seguro, tempo sem perigo</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Insolação (Heat Stroke)</strong>
+      </td>
+      <td>Superaquecimento extremo</td>
+      <td>Temperatura muito alta por tempo prolongado</td>
+      <td>Dano contínuo, confusão, náusea/cegueira, possível morte</td>
+      <td>Ir para local frio, beber água, remover roupas pesadas</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>❄️ Hipotermia (Hypothermia)</strong>
+      </td>
+      <td>Resfriamento extremo</td>
+      <td>Temperatura muito baixa por tempo prolongado</td>
+      <td>Lentidão extrema, dano contínuo, possível Frostbite</td>
+      <td>Ir para local quente, fogueiras, roupas quentes, comida quente</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🥶 Congelamento (Frostbite)</strong>
+      </td>
+      <td>Danos por frio extremo (pode ser permanente)</td>
+      <td>Hipotermia avançada em biomas gelados</td>
+      <td>Dano permanente de vida máxima (se configurado), lentidão extrema</td>
+      <td>Poções de regeneração, Leite (remove efeito), Golden Apple</td>
+      <td>🔴<strong>Difícil</strong> | <strong>⚫ Permanente</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😵‍💫 Desidratação (Dehydration)</strong>
+      </td>
+      <td>Falta extrema de água</td>
+      <td>Hidratação zerada por tempo prolongado</td>
+      <td>Dano contínuo, visão turva, lentidão, morte</td>
+      <td>Beber água IMEDIATAMENTE, preferencialmente purificada</td>
+      <td>🟢 <strong>Fácil</strong> (se tiver água) </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😵 Insanidade (Insanity)</strong>
+      </td>
+      <td>Colapso mental completo</td>
+      <td>Estresse máximo por muito tempo</td>
+      <td>Alucinações (mobs falsos), sons assustadores, comportamento aleatório</td>
+      <td>Meditação (se tiver mod), tempo em lugar seguro, leite ajuda parcialmente</td>
+      <td>🔴 <strong>Difícil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💨 Asfixia (Suffocation)</strong>
+      </td>
+      <td>Falta de oxigênio respirável</td>
+      <td>Áreas com gases tóxicos, submarino sem ar</td>
+      <td>Dano rápido, visão turva, morte em segundos</td>
+      <td>Sair da área gasosa, usar respiradores (se tiver mod)</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Queimadura por Gás (Gas Burns)</strong>
+      </td>
+      <td>Queimaduras de gases inflamados</td>
+      <td>Gases inflamáveis + fonte de ignição</td>
+      <td>Dano de fogo, itens podem queimar no inventário</td>
+      <td>Água, sair das chamas, Poção de Fire Resistance</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>☠️ Envenenamento por Gás (Gas Poisoning)</strong>
+      </td>
+      <td>Intoxicação por gases tóxicos</td>
+      <td>Exposição a CO2, metano, outros gases nocivos</td>
+      <td>Náusea, dano contínuo, fraqueza</td>
+      <td>Ar fresco, Poção de Antídoto (se disponível), Leite</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏔️ Mal da Montanha (Altitude Sickness)</strong>
+      </td>
+      <td>Problemas em grandes altitudes</td>
+      <td>Altitudes acima de Y=128 por tempo prolongado</td>
+      <td>Fadiga, falta de ar, dano se muito extremo</td>
+      <td>Descer para altitude mais baixa</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🪸 Doença do Mergulhador (Diver's Disease)</strong>
+      </td>
+      <td>Problemas de descompressão</td>
+      <td>Subir rápido de grandes profundidades aquáticas</td>
+      <td>Dano, náusea, possível morte súbita</td>
+      <td>Subir gradualmente, Poção de Water Breathing ajuda</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😴 Privação de Sono (Sleep Deprivation)</strong>
+      </td>
+      <td>Falta de descanso adequado</td>
+      <td>Muitos dias sem dormir em uma cama</td>
+      <td>Alucinações, lentidão, aumento de estresse</td>
+      <td>Dormir em uma cama por noite completa</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💪 Fadiga por Carga (Load Fatigue)</strong>
+      </td>
+      <td>Cansanço por carregar peso excessivo</td>
+      <td>Inventário muito cheio por tempo prolongado</td>
+      <td>Lentidão, aumento do consumo de água/comida</td>
+      <td>Esvaziar inventário, usar baús/backpacks</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏜️ Exaustão por Calor (Desert Exhaustion)</strong>
+      </td>
+      <td>Cansaço extremo em desertos</td>
+      <td>Permanência prolongada em biomas desérticos</td>
+      <td>Consumo acelerado de água, fadiga, lentidão</td>
+      <td>Sair do deserto, beber água frequentemente</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🧊 Lentidão Gélida (Ice Slowness)</strong>
+      </td>
+      <td>Movimento reduzido em gelo/neve</td>
+      <td>Caminhar sobre gelo/neve sem equipamento adequado</td>
+      <td>Velocidade reduzida, chance de escorregar</td>
+      <td>Botas com tração, sair do gelo</td>
+      <td>🟢 <strong>Fácil</strong>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤStatus Específicos</h2></caption>
+  <thead>
+    <tr>
+      <th>Nome do Status</th>
+      <th>Como Adquirir</th>
+      <th>Como se Livrar</th>
+      <th>Dificuldade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>⚡ Choque Elétrico</strong>
+      </td>
+      <td>Exposição a fiação elétrica exposta (mods como GregTech)</td>
+      <td>Afastar-se da fonte, Poção de Fire Resistance ajuda</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>☢️ Contaminação Radioativa</strong>
+      </td>
+      <td>Exposição a materiais radioativos (nuclear do GT/IC2)</td>
+      <td>Bebidas descontaminantes, equipamento de hazmat</td>
+      <td>🔴 <strong>Difícil</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🧪 Intoxicação Química</strong>
+      </td>
+      <td>Manuseio de químicos perigosos sem proteção</td>
+      <td>Leite, antídotos específicos</td>
+      <td>🟡 <strong>Médio</strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤLegenda de Dificuldade</h2></caption>
+  <tr>
+    <td>🟢 <strong>Fácil</strong>
+    </td>
+    <td>Pode ser removido com ações simples ou itens comuns</td>
+  </tr>
+  <tr>
+    <td>🟡 <strong>Médio</strong>
+    </td>
+    <td>Requer itens específicos ou condições especiais</td>
+  </tr>
+  <tr>
+    <td>🔴 <strong>Difícil</strong>
+    </td>
+    <td>Requer itens raros, poções especiais ou tem consequências permanentes</td>
+  </tr>
+  <tr>
+    <td>⚫ <strong>Permanente</strong>
+    </td>
+    <td>Não pode ser completamente removido (dano permanente)</td>
+  </tr>
+</table>
+
+##### 🛡️ Itens Úteis para Gerenciar Status
+
+<ul>
+  <li>
+    <strong>Garrafa de Água/Cantil:</strong> Hidratação básica
+  </li>
+  <li>
+    <strong>Água Purificada:</strong> Hidratação melhorada + remove alguns efeitos
+  </li>
+  <li>
+    <strong>Leite:</strong> Remove muitos efeitos negativos (mas não todos)
+  </li>
+  <li>
+    <strong>Poções:</strong> Fire Resistance, Water Breathing, Regeneration são essenciais
+  </li>
+  <li>
+    <strong>Roupas Adequadas:</strong> Capacetes para calor/frio, botas com tração
+  </li>
+  <li>
+    <strong>Golden Apple:</strong> Remove quase todos os efeitos negativos
+  </li>
+  <li>
+    <strong>Comida Quente/Fria:</strong> Ajusta temperatura corporal
+  </li>
+  <li>
+    <strong>Equipamento de Proteção:</strong> Hazmat suit, máscaras de gás
+  </li>
+</ul>
+
+##### 🎮 Dicas para Sobrevivência
+
+<ol>
+  <li>
+    <strong>SEMPRE carregue água</strong> - pelo menos 2-3 garrafas
+  </li>
+  <li>
+    <strong>Use roupas adequadas</strong> ao bioma que vai explorar
+  </li>
+  <li>
+    <strong>Durma regularmente</strong> para evitar privação de sono
+  </li>
+  <li>
+    <strong>Em cavernas</strong>, fique atento a poças de gás (visuais)
+  </li>
+  <li>
+    <strong>Tenha leite</strong> no inventário para emergências
+  </li>
+  <li>
+    <strong>Em climas extremos</strong>, construa abrigos temporários
+  </li>
+  <li>
+    <strong>Monitore seus status</strong> na HUD
+  </li>
+  <li>
+    <strong>No servidor / modpack</strong>, sempre use equipamento de proteção ao manusear materiais perigosos
+  </li>
+</ol>
+<p>
+  <em>Nota: Alguns status podem variar dependendo da configuração e mods adicionais presentes no modpack.</em>
+</p>
+	
+---
 	
 #### 🔁 OTIMIZAÇÃO — Mudanças de Configuração
 💬 @Densuki:
 > Essas mudanças existem para:
->	• **Limitar**: Funcionalidades do modpack, tornando cada mod necessário, evitando a criações desnecessárias / inutilização de recursos. 
->	• **Balancear**: Para fins de progresso e gameplay. Aqui é para dar desafio e fazer o jogador explorar!
->	• **Remover**: Funcionalidades que atrapalham a gameplay
+
+- **Limitar**: Funcionalidades do modpack, tornando cada mod necessário, evitando a criações desnecessárias / inutilização de recursos.
+- **Balancear**: Para fins de progresso e gameplay. Aqui é para dar desafio e fazer o jogador explorar!
+- **Remover**: Funcionalidades que atrapalham a gameplay
 	
 #### 🛡 Balanceamento️ — Mudanças de Equilíbrio
 💬 @Densuki:
 > Aqui houveram algumas mudanças para o balanceamento nas quais eu achei necessário para tornar a dinâmica e gameplay acessível e menos lagado.
 
-- Gases:
-	✅ Gases ainda existem no mundo
-	✅ Incêndios ainda podem acontecer (se houver fonte de ignição)
-	✅ Atmosferas diferentes em biomas/dimensões
-	✅ Mas: Gases se movem mais devagar
-	✅ Mas: Reação a fontes de calor é mais lenta
+- **Gases:**\
+	✅ Gases ainda existem no mundo\
+	✅ Incêndios ainda podem acontecer (se houver fonte de ignição)\
+	✅ Atmosferas diferentes em biomas/dimensões\
+	✅ Mas: Gases se movem mais devagar\
+	✅ Mas: Reação a fontes de calor é mais lenta\
 	✅ Mas: Menos gases processados por tick
 
-###### 1. - Física:
-> **Balance entre performance e resposta**
-> • "Physics Interval"=12  # 1.66 atualizações/segundo (bom balance).
+##### 1. - Física:
+**Balance entre performance e resposta**
+- **Intervalo de Física = ``12``**
+↳ *1.66 atualizações/segundo (bom balance).*
 
 <table>
 	<thead>
 		<tr>
-			<th>Cenários</th> <th>Nome</th> <th>1º Intervalo</th> <th>2º Intervalo</th>
+			<th>Cenários</th> <th>Ação</th> <th>1º Intervalo</th> <th>2º Intervalo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -229,135 +408,37 @@ Valores testados:
 </table>
 
 💬 @Densuki:
-> Aqui é um parâmetro de análise para dar uma referência.
-> Um dos parâmetros possíveis no meu alinhamento que encontrei nas otimizações... Entre Padrão, Muito maixo e Extremo, escolhi um "meio termo".
+> Aqui é um parâmetro de análise para dar uma referência.\
+> Um dos parâmetros possíveis no meu alinhamento que encontrei nas otimizações...\
+> Entre Padrão, Muito maixo e Extremo, escolhi um "meio termo".
 	
 
 ##### 2. - Gases:
-> • "Gas Pass Limit"=48        # Mais restritivo que 64, o padrão é -1: Processa TODOS os gases no chunk de uma vez. Com 64: Processa no máximo 64 gases por passagem por chunk. É uma redução de lag: Até 80% em chunks muito gasosos.
-> • "Gas Tick Rate"=80         # Apenas 0.25 atualizações/segundo, o padrão é 32: Atualiza gases a cada 1.6 segundos. Já com 64: Atualiza gases a cada 3.2 segundos... Aqui já são uma redução de lag de 50% menos processamento.
-> • "Slow Gases"=true          # Crítico para performance, mas os gases se movem muito devagar em comparação ao "``false``" que os gases se espalham rapidamente (mais cálculos).
-> • "Water like spreading"=false  # Menos cálculos, onde os gases se espalham como água (rápido/complexo) em comparação ao "``true``" a difusão é realista (simples/lento).
-> • "Render normal gas"=false  # Sem overhead de render
-
----
-
-### 🧱 『SERVIDOR』
-
----
-
-### ♻ ALTERAÇÕES
-
-#### ``Combate & Progressão``
-
-#### ⚔️ COMBATE — Escalonamento Dinâmico
-> O sistema transforma mobs comuns em desafios progressivos.
-
-- A I.A. das entidades foi aprimorada e combinada com outros 2 mods
-- Mobs comuns evoluem para **mini-bosses** ao longo do tempo
-- Mesmo jogadores end-game continuam enfrentando desafios
-- Quests de caça e eliminação tornam-se altamente relevantes
-- Dimensões passam a se comportar como:
-  - 🗺️ “Dungeons a Céu Aberto”
-  - 🌑 Zonas hostis e desoladas
-  - 🎮 Experiência RPG de alto risco
-
-💬 @Densuki  
-> Boa sorte explorando dungeons ou montando farms 😈  
-> Isso também afeta bosses, eventos e entidades avulsas.
-
----
-
-##### 📐 ESCALONAMENTO — Fórmula de Dificuldade
-
-##### 🧮 Fórmula Base
-```md
-RD = Fator_Dificuldade_Mundo × (1 + (Tempo_Total_Jogo / 100h))
+- **Limite de passagem de gás = ``48``**
+↳
+```yaml
+Mais restritivo que 64.
+O padrão é -1: Processa TODOS os gases no chunk de uma vez.
+Com 64: Processa no máximo 64 gases por passagem por chunk.
+É uma redução de lag: Até 80% em chunks muito gasosos.
 ```
 
-- 📈 RD máximo: **~5.0**
-- ⏱️ Atingido após **~400 horas**
-- 👤 Escala por **jogador**, não por chunk
+- **Taxa de variação do gás = ``80``**
+↳
+```yaml
+Apenas 0.25 atualizações/segundo.
+O padrão é 32: Atualiza gases a cada 1.6 segundos.
+Já com 64: Atualiza gases a cada 3.2 segundos...
+Aqui já são uma redução de lag de 50% menos processamento.
+```
 
-📊 Abaixo há uma comparação direta com o sistema vanilla.
+- **Gases lentos = ``true``**\
+↳ *Crítico para performance, mas os gases se movem muito devagar em comparação ao "``false``" que os gases se espalham rapidamente (mais cálculos).*
 
----
+- **Como se estivesse se espalhando como água = ``false``**\
+↳ *Menos cálculos, onde os gases se espalham como água (rápido/complexo) em comparação ao "``true``" a difusão é realista (simples/lento).*
 
-##### 🔴 IMPACTO — Para o Jogador (Desafios)
-
-❌ Mobs tornam-se tanques  
-↳ Zombies com **60+ HP efetivo**
-❌ Dano escalonado  
-↳ Hits podem remover **5–10 corações**, mesmo com diamante
-❌ Encantamentos inimigos  
-↳ Fire Aspect, Thorns, etc.
-❌ Equipamentos perdidos  
-↳ Mobs pegam drops e usam contra você
-❌ Noites perigosas eternamente  
-↳ Não existe mais “fase fácil” após 100h
-
----
-
-##### 🟢 IMPACTO — Para o Jogador (Vantagens)
-
-✅ Loot aprimorado  
-↳ Equipamentos encantados com maior frequência
-✅ Farms mais lucrativas  
-↳ XP e drops mais valiosos
-✅ Desafio constante  
-↳ Nunca se torna trivial
-✅ Preparação valorizada  
-↳ Poções, buffs e armaduras são essenciais
-✅ Cooperação incentivada  
-↳ Jogar em grupo faz diferença real
-
----
-
-##### ⚔️ IMPACTO — Para as Entidades (Zombies)
-
-➕ Variedade tática  
-↳ Tanques, DPS e suportes
-➕ Comportamentos únicos  
-↳ Uso de bows, estratégias diferenciadas
-➕ Sobrevivência real  
-↳ Não morrem em 1-hit facilmente
-➕ Ameaça consistente  
-↳ Capazes de matar jogadores descuidados
-➕ Escalonamento infinito  
-↳ Sempre desafiadores, independente do progresso
-
----
-
-<table>
-	<caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🧟 Tabela de Evolução do Zombie</h2></caption>
-	<thead>
-		<tr>
-			<th>Tempo</th> <th>RD</th> <th>Armadura</th> <th>Arma</th> <th>Encant.</th> <th>Dano</th> <th>Vida</th> <th>Estratégia</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>0–5h</td> <td>0.5–1.0</td> <td>0–15%</td> <td>0–10%</td> <td>Nenhum</td> <td>+0% 🗡</td> <td>20 ❤️</td> <td>Arma básica</td>
-		</tr>
-		<tr>
-			<td>10h</td> <td>1.5</td> <td>25%</td> <td>20%</td> <td>Prot. I</td> <td>+10% 🗡</td> <td>22–26 ❤️</td> <td>Ferro+</td>
-		</tr>
-		<tr>
-			<td>24h</td> <td>2.0</td> <td>40%</td> <td>35%</td> <td>Sharp I</td> <td>+20% 🗡</td> <td>24–32 ❤️</td> <td>Diamante</td>
-		</tr>
-		<tr> 
-			<td>50h</td> <td>2.8</td> <td>60%</td> <td>50%</td> <td>Prot. II</td> <td>+35% 🗡</td> <td>27–38 ❤️</td> <td>Enc. básicos</td>
-		</tr>
-		<tr> 
-			<td>100h</td> <td>3.5</td> <td>75%</td> <td>65%</td> <td>Fire I</td> <td>+50% 🗡</td> <td>30–45 ❤️</td> <td>Full diamante</td>
-		</tr>
-		<tr>
-			<td>200h</td> <td>4.5</td> <td>90%</td> <td>80%</td> <td>Sharp III</td> <td>+75% 🗡</td> <td>35–55 ❤️</td> <td>Poções</td>
-		</tr>
-		<tr>
-			<td>400h+</td> <td>5.0</td> <td>95%+</td> <td>90%+</td> <td>Avançado</td> <td>+100% 🗡</td> <td>40–65 ❤️</td> <td>Estratégias</td>
-		</tr>
-	</tbody>
-</table>
+- **Render normal gas = ``false``**\
+↳ *Sem overhead de render.*
 
 ---
