@@ -7,12 +7,30 @@
  ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta)](https://git.io/typing-svg)
  ## [0.0.1]
 
-|**Nº**||
+|**Nº**|Hyperlinks Interativos|
 |---|---|
-|**1º**|[]()|
-|**2º**|[]()|
-|**3º**|[]()|
-|**4º**|[]()|
+|**1º**|[Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#%EF%B8%8F-otimiza%C3%A7%C3%A3o--geral)|
+|**2º**|[Funcionalidades](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-funcionalidades)|
+|**3º**|[Tabela Principal de Status](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4tabela-principal-de-status)|
+|**4º**|[Sistemas & Funcionamentos](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#sistemas--funcionamentos)|
+|**5º**|[Sistema de Física](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4sistema-de-f%C3%ADsica)|
+|**6º**|[Sistema de Gases](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4sistema-de-gases)|
+|**7º**|[Sistema de Temperatura Corporal](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4sistema-de-temperatura-corporal)|
+|**8º**|[Sistema de Hidratação e Água](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4sistema-de-hidrata%C3%A7%C3%A3o-e-%C3%A1gua)|
+|**9º**|[Sistema de Saúde e Status Persistentes](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4sistema-de-sa%C3%BAde-e-status-persistentes-)|
+|**10º**|[Geração de Mundo](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4gera%C3%A7%C3%A3o-de-mundo-)|
+|**11º**|[Configurações de Interface e UX](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4configura%C3%A7%C3%B5es-de-interface-e-ux)|
+|**12º**|[OTIMIZAÇÃO — Mudanças de Configuração](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--mudan%C3%A7as-de-configura%C3%A7%C3%A3o)|
+|**13º**|[Balanceamento️ — Mudanças de Equilíbrio](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-balanceamento%EF%B8%8F--mudan%C3%A7as-de-equil%C3%ADbrio)|
+|**14º**|[Notas Importantes para Jogadores](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#-notas-importantes-para-jogadores)|
+|**15º**|[Galeria do Changelog](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/tree/main/gallery)|
+|**16º**|[Patch BETA - 0.0.1 notes](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1%20notes.md)|
+
+> [!IMPORTANT]
+> **💬 [Densuki](https://github.com/Densuki)**:\
+> Apenas clique no nome para ser encaminhado para a aba destinada.\
+> Basicamente o "**``Patch BETA - 0.0.1 notes``**" trás um breve resumo de mudanças, balanceamento e comparações de mudanças no geral.\
+> Ele não resume este arquivo, mas destaca coisas mais técnicas e que soariam "redundantes" neste arquivo.
 
 ---
 
@@ -818,7 +836,7 @@
 
 > [!TIP]
 > 💬 **[Densuki](https://github.com/Densuki)**:
-> Abaixo está a descrição detalhada de cada Mudança e Balanceamento
+> Abaixo está a descrição detalhada de cada Mudança e Balanceamento:
 
 <table>
   <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🌟 Configurações Gerais</h2></caption>
@@ -1267,5 +1285,8 @@
 ---
 
 ## Links & Referências
+
+- [Retornar pro Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1.md#001)
+- [Patch BETA - 0.0.1 | Notes](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1%20notes.md)
 
 ---
