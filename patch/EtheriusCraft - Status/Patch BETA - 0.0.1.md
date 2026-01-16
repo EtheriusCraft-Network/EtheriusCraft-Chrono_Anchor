@@ -30,7 +30,9 @@
 💬 **[Densuki](https://github.com/Densuki)**:
 > Mas de antemão, preciso expor algumas funcionalidades que existem e mantive, para entendimento geral de todos.	
 > Abaixo estará uma tabela informando a respeito, com nome e descrição.
-	
+
+#### Status & Ações
+
 <table>
   <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTabela Principal de Status</h2></caption>
   <thead>
@@ -375,6 +377,432 @@
 </p>
 	
 ---
+
+#### Sistemas & Funcionamentos
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSistema de Física</h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Impacto no Gameplay</th>
+      <th>Impacto no Desempenho</th>
+      <th>Configuração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>🪨 Gravidade de Areia/Gravilha</strong>
+      </td>
+      <td>Blocos afetados por gravidade caem se não tiverem suporte</td>
+      <td>Mais realismo, perigo em cavernas, farms diferentes</td>
+      <td>🟡 Médio (em colapsos grandes)</td>
+      <td>Ativado com "Intervalo de Física" = 12-20</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🧊 Quebra de Gelo Realista</strong>
+      </td>
+      <td>Gelo quebra em grandes placas se suporte for removido</td>
+      <td>Perigo em lagos congelados, mecânicas novas</td>
+      <td>🔴 Alto (se "Grande Rachadura no Gelo" estiver ativo)</td>
+      <td>"Grande Rachadura no Gelo" está desativado</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏗️ Estabilidade de Estruturas</strong>
+      </td>
+      <td>Estruturas mal suportadas podem desmoronar</td>
+      <td>Construções requerem planejamento, suportes necessários</td>
+      <td>🟡 Médio</td>
+      <td>Ativado com limite de blocos</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💧 Fluxo de Água Melhorado</strong>
+      </td>
+      <td>Água flui mais realisticamente, pode causar erosão</td>
+      <td>Farms de água diferentes, cuidado com inundações</td>
+      <td>🟢 Baixo</td>
+      <td>Ativado</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Propagação de Fogo</strong>
+      </td>
+      <td>Fogo se espalha mais realisticamente</td>
+      <td>Incêndios perigosos, cuidado com construções</td>
+      <td>🟡 Médio (em grandes incêndios)</td>
+      <td>Ativado com limites</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSistema de Gases</h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Tipos de Gás</th>
+      <th>Perigos</th>
+      <th>Configuração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>💨 Geração Natural</strong>
+      </td>
+      <td>Gases são gerados naturalmente no mundo</td>
+      <td>Metano (pântanos), CO2 (cavernas), Radônio (radioativo)</td>
+      <td>Asfixia, explosões, radiação</td>
+      <td>"Geração de Gases" está ativo com tick rate alto</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Gases Inflamáveis</strong>
+      </td>
+      <td>Alguns gases pegam fogo com fontes de ignição</td>
+      <td>Metano, Hidrogênio, Propano</td>
+      <td>Explosões, incêndios em larga escala</td>
+      <td>"Lista de Ignição" com alguns blocos / itens (possível atualização no **PATCH - BETA 0.0.2**)</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🌫️ Acúmulo em Cavernas</strong>
+      </td>
+      <td>Gases pesados se acumulam em áreas baixas</td>
+      <td>CO2, Radônio, Cloro</td>
+      <td>Armadilhas naturais, morte súbita</td>
+      <td>"Gases Lentos" ativos</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💨 Vento e Difusão</strong>
+      </td>
+      <td>Gases se espalham com vento e difusão</td>
+      <td>Todos os gases</td>
+      <td>Áreas grandes afetadas</td>
+      <td>"Como se Estivesse se Espalhando como Água" está desativado para performance</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🎨 Renderização</strong>
+      </td>
+      <td>Gases podem ser vistos (alguns tipos)</td>
+      <td>Fumaça, vapor, névoa tóxica</td>
+      <td>Identificação visual de perigo</td>
+      <td>"Renderizar o Gás" está desativado para FPS</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSistema de Temperatura Corporal</h2></caption>
+  <thead>
+    <tr>
+      <th>Mecânica</th>
+      <th>Descrição</th>
+      <th>Fatores que Influenciam</th>
+      <th>Efeitos</th>
+      <th>Configuração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>🌡️ Temperatura Ambiente</strong>
+      </td>
+      <td>Temperatura baseada no bioma/altitude</td>
+      <td>Bioma, altitude, clima, hora do dia</td>
+      <td>Base para cálculos de conforto</td>
+      <td>Ativado</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Blocos Quentes/Frios</strong>
+      </td>
+      <td>Blocos afetam temperatura local</td>
+      <td>Lava, fogo, gelo, neve, certos blocos de mods</td>
+      <td>Microclimas, áreas seguras/perigosas</td>
+      <td>"Potência de Queda de Temperatura do Bloco" foi configurado para 1.0</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>👕 Roupas e Armaduras</strong>
+      </td>
+      <td>Equipamentos afetam isolamento térmico</td>
+      <td>Material da armadura, encantamentos específicos</td>
+      <td>Proteção contra extremos</td>
+      <td>"Redenrização de Equipamentos" está ativo</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🍲 Comida e Bebida</strong>
+      </td>
+      <td>Consumíveis ajustam temperatura corporal</td>
+      <td>Sopa quente, bebidas geladas, comidas especiais</td>
+      <td>Regulação temporária</td>
+      <td>Ativado</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏠 Estruturas e Abrigos</strong>
+      </td>
+      <td>Construções afetam temperatura interna</td>
+      <td>Paredes, tetos, portas, isolamento</td>
+      <td>Ambientes controlados</td>
+      <td>Ativado</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSistema de Hidratação e Água</h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Mecânicas</th>
+      <th>Configuração</th>
+      <th>Impacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>💧 Consumo de Água</strong>
+      </td>
+      <td>Jogador perde hidratação com o tempo</td>
+      <td>Atividades físicas, temperatura, tempo</td>
+      <td>Ativado</td>
+      <td>🟡 Médio (necessidade constante)</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏺 Fontes de Água</strong>
+      </td>
+      <td>Diferentes tipos de água fornecem hidratação diferente</td>
+      <td>Água suja, água limpa, água purificada, poções</td>
+      <td>Ativado</td>
+      <td>🟢 Baixo (variedade)</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>⚗️ Purificação de Água</strong>
+      </td>
+      <td>Sistema para purificar água suja</td>
+      <td>Fervura, filtros, produtos químicos</td>
+      <td>Ativado</td>
+      <td>🟡 Médio (preparação)</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🌊 Água Finita</strong>
+      </td>
+      <td>Água não se regenera automaticamente</td>
+      <td>Ciclo da água realista, conservação necessária</td>
+      <td>"Água Finita" ativado</td>
+      <td>🔴 Alto (muda farms)</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>♨️ Caldeirões</strong>
+      </td>
+      <td>Caldeirões podem ferver água com blocos quentes</td>
+      <td>Purificação, cozimento, sistemas automáticos</td>
+      <td>"Blocos de Aquecimento de Caldeirão" com alguns blocos / itens (possível atualização no **PATCH - BETA 0.0.2**)</td>
+      <td>🟢 Baixo</td>
+    </tr>
+  </tbody>
+</table> 
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSistema de Saúde e Status Persistentes </h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Persistência</th>
+      <th>Configuração</th>
+      <th>Dificuldade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>💀 Status na Morte</strong>
+      </td>
+      <td>Status persistem após morte do jogador</td>
+      <td>Manutenção de condições adquiridas</td>
+      <td>"Manter Status Após a Morte" está atualmente desativado, mas posso ativá-lo posteriormente para ser um "desafio"</td>
+      <td>🔴 Difícil</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🥶 Danos Permanentes</strong>
+      </td>
+      <td>Frostbite pode causar dano permanente</td>
+      <td>Redução permanente de vida máxima</td>
+      <td>"A hipotermia é Permanente" está ativado para fins de desafio, mas posso por um meio de removê-lo</td>
+      <td>🔴 Muito Difícil</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🧠 Saúde Mental</strong>
+      </td>
+      <td>Sistema de sanidade/estresse/insanidade</td>
+      <td>Acúmulo progressivo, difícil de reverter</td>
+      <td>Ativado</td>
+      <td>🟡 Médio-Difícil</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>⚖️ Peso e Carga</strong>
+      </td>
+      <td>Inventário cheio causa fadiga</td>
+      <td>Penalidades por sobrecarga</td>
+      <td>Ativado</td>
+      <td>🟢 Fácil-Medio</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😴 Necessidade de Sono</strong>
+      </td>
+      <td>Jogador precisa dormir regularmente</td>
+      <td>Penalidades progressivas por privação</td>
+      <td>Ativado</td>
+      <td>🟢 Fácil</td>
+    </tr>
+  </tbody>
+</table> 
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤGeração de Mundo </h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Impacto na Geração</th>
+      <th>Performance</th>
+      <th>Configuração</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>⛏️ Minas Abandonadas Melhoradas</strong>
+      </td>
+      <td>Minas maiores e mais complexas</td>
+      <td>Mais loot, mais complexidade, diferentes designs</td>
+      <td>🟡 Médio (gera mais estruturas)</td>
+      <td>"Habilitar Novas Minas Abandonados" está ativo, mas desativá-las aumenta a performance</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏘️ Minas em Vilas</strong>
+      </td>
+      <td>Vilas podem ter minas incorporadas</td>
+      <td>Integração vila-mina, loot mais acessível</td>
+      <td>🟢 Baixo</td>
+      <td>"Habilitar Minas nas Vilas" está desativado por performance, pois gera muito lag de geração de mundo</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💨 Geração de Gases</strong>
+      </td>
+      <td>Gases gerados durante worldgen</td>
+      <td>Poços de gás, áreas perigosas naturais</td>
+      <td>🔴 Alto (se muitos gases)</td>
+      <td>"Gerar Gases" está ativo com otimizações</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🌋 Características Especiais</strong>
+      </td>
+      <td>Formações especiais relacionadas a sistemas</td>
+      <td>Poços de calor/frio, áreas com atmosfera especial</td>
+      <td>🟢 Baixo</td>
+      <td>Ativado</td>
+    </tr>
+  </tbody>
+</table> 
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤConfigurações de Interface e UX</h2></caption>
+  <thead>
+    <tr>
+      <th>Funcionalidade</th>
+      <th>Descrição</th>
+      <th>Efeito</th>
+      <th>Configuração Padrão</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>👁️ Náusea vs Cegueira</strong>
+      </td>
+      <td>Substitui efeito de náusea por cegueira</td>
+      <td>Menos motion sickness, mesma dificuldade</td>
+      <td>"Cegueira em vez de Náusea" está ativo</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>📊 HUD de Status</strong>
+      </td>
+      <td>Mostra status na tela do jogador</td>
+      <td>Informação em tempo real, customizável</td>
+      <td>Ativado</td>
+    </tr>
+  </tbody>
+</table> 
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤLegenda de Impacto</h2></caption>
+  <tr>
+    <td>🟢 <strong>Baixo Impacto</strong>
+    </td>
+    <td>Pouco ou nenhum efeito no desempenho</td>
+  </tr>
+  <tr>
+    <td>🟡 <strong>Médio Impacto</strong>
+    </td>
+    <td>Pode afetar desempenho em certas condições</td>
+  </tr>
+  <tr>
+    <td>🔴 <strong>Alto Impacto</strong>
+    </td>
+    <td>Significativo impacto no desempenho, requer otimização</td>
+  </tr>
+  <tr>
+    <td>⚫ <strong>Crítico</strong>
+    </td>
+    <td>Pode causar lag severo ou crashes se mal configurado</td>
+  </tr>
+</table>
+<p>
+  <em>Nota: Todas as configurações podem variar conforme versões específicas ou configurações do modpacks.</em>
+</p>
+
+---
 	
 ### 🔁 OTIMIZAÇÃO — Mudanças de Configuração
 💬 **[Densuki](https://github.com/Densuki)**:
@@ -451,8 +879,8 @@ Aqui já são uma redução de lag de 50% menos processamento.
 - **Como se estivesse se espalhando como água = ``false``**\
 ↳ *Menos cálculos, onde os gases se espalham como água (rápido/complexo) em comparação ao "``true``" a difusão é realista (simples/lento).*
 
-- **Render normal gas = ``false``**\
-↳ *Sem overhead de render.*
+- **Renderizar o Gás = ``false``**\
+↳ *Sem overhead de render. Ou seja, o gás não se torna visível para fins de otimização.*
 
 ---
 
