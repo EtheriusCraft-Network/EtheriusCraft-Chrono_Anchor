@@ -4,7 +4,7 @@
 -->
 
  ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Micro+5&size=40&pause=1000&color=880EF7&center=true&vCenter=true&width=435&lines=EtheriusCraft+-+Status)](https://git.io/typing-svg)
- ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤ ㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta)](https://git.io/typing-svg)
+ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta)](https://git.io/typing-svg)
  ## [0.0.1]
 
 |**Nº**||
@@ -816,71 +816,453 @@
 💬 **[Densuki](https://github.com/Densuki)**:
 > Aqui houveram algumas mudanças para o balanceamento nas quais eu achei necessário para tornar a dinâmica e gameplay acessível e menos lagado.
 
-- **Gases:**\
-	✅ Gases ainda existem no mundo\
-	✅ Incêndios ainda podem acontecer (se houver fonte de ignição)\
-	✅ Atmosferas diferentes em biomas/dimensões\
-	✅ Mas: Gases se movem mais devagar\
-	✅ Mas: Reação a fontes de calor é mais lenta\
-	✅ Mas: Menos gases processados por tick
-
-#### 1. - Física:
-**Balance entre performance e resposta**
-- **Intervalo de Física = ``12``**
-↳ *1.66 atualizações/segundo (bom balance).*
+> [!TIP]
+> 💬 **[Densuki](https://github.com/Densuki)**:
+> Abaixo está a descrição detalhada de cada Mudança e Balanceamento
 
 <table>
-	<thead>
-		<tr>
-			<th>Cenários</th> <th>Ação</th> <th>1º Intervalo</th> <th>2º Intervalo</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>1º</td> <th>Quebrando bloco de areia</td> <th>6: Cai quase instantaneamente (0.3s)</td> <th>20: Pode levar até 1 segundo para começar a cair</td>
-		</tr>
-		<tr>
-			<th>2º</td> <th>Colapso de caverna</td> <th>6: Vários blocos caem rapidamente, pode causar lag</td> <th>20: Cai em "ondas" mais espaçadas, menos lag</td>
-		</tr>
-		<tr>
-			<th>3º</td> <th>Estrutura complexa caindo</td> <th>6: Tudo cai de uma vez (muito lag)</td> <th>20: Cai gradualmente (lag distribuído)</td>
-		</tr>
-	</tbody>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🌟 Configurações Gerais</h2></caption>
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Jogabilidade</th>
+      <th>Impacto no Desempenho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>👤 Forçar Configurações do Servidor</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Todos os jogadores usam as mesmas configurações do servidor</td>
+      <td>🟢 Justo - Todos têm a mesma experiência</td>
+      <td>🟡 Médio - Usa um pouco mais de internet</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🎭 Forçar Perfil Padrão</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Usa sempre as configurações "default" do mod</td>
+      <td>🟢 Consistente - Sem surpresas</td>
+      <td>🟢 Baixo</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <em>Nota: Uma breve descrição que não afetam muito na gameplay, mas ajuda a entender o esquema de configuração</em>
+</p>
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ💨 Sistema de Gases</h2></caption>
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Jogabilidade</th>
+      <th>Impacto no Desempenho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>💨 Gases Ativados</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Há gases perigosos no mundo que podem explodir ou sufocar</td>
+      <td>🔴 Perigoso - Adiciona risco em cavernas e áreas fechadas</td>
+      <td>🔴 Alto - Processa gases em cada área carregada</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>📊 Limite de Processamento de Gases</strong>
+      </td>
+      <td>48 gases por área</td>
+      <td>Quantos gases podem ser calculados de uma vez em cada região</td>
+      <td>🟡 Moderado - Muitos gases podem não se espalhar totalmente</td>
+      <td>🟡 Médio - Controla o impacto no servidor</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>⏱️ Velocidade de Atualização de Gases</strong>
+      </td>
+      <td>Atualiza a cada 4 segundos</td>
+      <td>De quanto em quanto tempo os gases se movem e se espalham</td>
+      <td>🟡 Lento - Gases se movem devagar, dando tempo para reagir</td>
+      <td>🟢 Baixo - Atualiza menos vezes</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>👀 Mostrar Gases Invisíveis</strong>
+      </td>
+      <td>Desativado ❌</td>
+      <td>Alguns gases normais são invisíveis por padrão</td>
+      <td>🟢 Seguro - Menos poluição visual</td>
+      <td>🟢 Baixo - Não renderiza partículas extras</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🐌 Gases Lentos</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Gases se movem muito devagar para reduzir impacto no servidor</td>
+      <td>🟢 Previsível - Fácil de evitar gases perigosos</td>
+      <td>🟢 Baixo - Menos cálculos de movimento</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🌊 Espalhamento Tipo Água</strong>
+      </td>
+      <td>Desativado ❌</td>
+      <td>Gases se espalham igual água (rápido) ou se difundem (lento)</td>
+      <td>🟡 Realista - Difusão mais lenta e natural</td>
+      <td>🟢 Baixo - Cálculos mais simples</td>
+    </tr>
+  </tbody>
 </table>
 
-💬 **[Densuki](https://github.com/Densuki)**:
-> Aqui é um parâmetro de análise para dar uma referência.\
-> Um dos parâmetros possíveis no meu alinhamento que encontrei nas otimizações...\
-> Entre Padrão, Muito maixo e Extremo, escolhi um "meio termo".
-	
+---
 
-#### 2. - Gases:
-- **Limite de passagem de gás = ``48``**
-↳
-```yaml
-Mais restritivo que 64.
-O padrão é -1: Processa TODOS os gases no chunk de uma vez.
-Com 64: Processa no máximo 64 gases por passagem por chunk.
-É uma redução de lag: Até 80% em chunks muito gasosos.
-```
+<table>
+  <thead>
+    <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ⚖️ Sistema de Física</h2></caption>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Jogabilidade</th>
+      <th>Impacto no Desempenho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>⏳ Atraso da Física em Novas Áreas</strong>
+      </td>
+      <td>2 segundos de espera</td>
+      <td>Tempo que a física espera antes de começar em áreas recém-carregadas</td>
+      <td>🟢 Estável - Evita colapsos imediatos ao entrar em cavernas</td>
+      <td>🟢 Baixo - Distribui o processamento</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔢 Limite de Blocos Atualizados</strong>
+      </td>
+      <td>64 blocos por vez</td>
+      <td>Quantos blocos podem cair/mover de uma só vez</td>
+      <td>🟡 Controlado - Colapsos grandes acontecem em etapas</td>
+      <td>🟡 Médio - Evita picos de processamento</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🧊 Quebra de Gelo em Massa</strong>
+      </td>
+      <td>Desativado ❌</td>
+      <td>Grandes áreas de gelo podem quebrar de uma vez se mal suportadas</td>
+      <td>🟢 Seguro - Não há surpresas em lagos congelados</td>
+      <td>🟢 Baixo - Evita processamento pesado</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>⚙️ Frequência da Física</strong>
+      </td>
+      <td>A cada 0.6 segundos</td>
+      <td>De quanto em quanto tempo a física verifica blocos que podem cair</td>
+      <td>🟡 Responsivo - Blocos caem com pouco atraso</td>
+      <td>🟡 Médio - Balance entre desempenho e resposta</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🛡️ Sistema de Segurança de Física</strong>
+      </td>
+      <td>Nível 1 (Prevenção)</td>
+      <td>Limita quantas entidades de física podem existir em uma área pequena</td>
+      <td>🟢 Estável - Evita situações extremas</td>
+      <td>🟢 Baixo - Previne travamentos</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🌍 Atraso da Física no Início</strong>
+      </td>
+      <td>3 segundos de espera</td>
+      <td>Tempo que a física espera quando o mundo/servidor inicia</td>
+      <td>🟢 Estável - Começo tranquilo sem colapsos imediatos</td>
+      <td>🟢 Baixo - Evita picos no carregamento</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Taxa de variação do gás = ``80``**
-↳
-```yaml
-Apenas 0.25 atualizações/segundo.
-O padrão é 32: Atualiza gases a cada 1.6 segundos.
-Já com 64: Atualiza gases a cada 3.2 segundos...
-Aqui já são uma redução de lag de 50% menos processamento.
-```
+---
 
-- **Gases lentos = ``true``**\
-↳ *Crítico para performance, mas os gases se movem muito devagar em comparação ao "``false``" que os gases se espalham rapidamente (mais cálculos).*
 
-- **Como se estivesse se espalhando como água = ``false``**\
-↳ *Menos cálculos, onde os gases se espalham como água (rápido/complexo) em comparação ao "``true``" a difusão é realista (simples/lento).*
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🏥 Sistema de Status Corporais</h2></caption>
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Jogabilidade</th>
+      <th>Dificuldade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>🥶 Congelamento (Frostbite)</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Exposição ao frio extremo pode causar danos permanentes</td>
+      <td>🔴 Muito Difícil - Danos que não curam totalmente</td>
+      <td>🔴 Extrema</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Insolação (Heat Stroke)</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Exposição ao calor extremo causa danos e confusão</td>
+      <td>🟡 Desafiador - Requer preparação para desertos</td>
+      <td>🟡 Médio</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>❄️ Hipotermia</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Frio extremo causa lentidão e danos</td>
+      <td>🟡 Desafiador - Necessita roupas quentes em biomas frios</td>
+      <td>🟡 Médio</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>😵 Insanidade</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Estresse extremo causa alucinações e comportamento estranho</td>
+      <td>🔴 Muito Difícil - Afeta sua percepção da realidade</td>
+      <td>🔴 Extrema</td>
+    </tr>
+  </tbody>
+</table> 
 
-- **Renderizar o Gás = ``false``**\
-↳ *Sem overhead de render. Ou seja, o gás não se torna visível para fins de otimização.*
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🗺️ Geração de Mundo</h2></caption>
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Exploração</th>
+      <th>Impacto no Carregamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>⛏️ Minas Abandonadas Melhoradas</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Gera minas muito maiores e mais complexas com mais loot</td>
+      <td>🟢 Rico - Mais tesouros para encontrar</td>
+      <td>🟡 Médio - Gera mais estruturas</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🏘️ Minas em Vilas</strong>
+      </td>
+      <td>Desativado ❌</td>
+      <td>Vilas podem ter entradas para minas abandonadas</td>
+      <td>🟡 Conveniente - Facilita encontrar minas</td>
+      <td>🟢 Baixo - Pouca diferença</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💨 Gerar Gases Naturalmente</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Gases são criados durante a geração do mundo em certas áreas</td>
+      <td>🔴 Perigoso - Armadilhas naturais em cavernas e pântanos</td>
+      <td>🟡 Médio - Adiciona processamento na geração</td>
+    </tr>
+  </tbody>
+</table>  
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🌡️ Sistema de Sobrevivência</h2></caption>
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Valor Atual</th>
+      <th>O que faz?</th>
+      <th>Impacto na Sobrevivência</th>
+      <th>Realismo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>👁️ Cegueira no Lugar de Náusea</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Substitui o efeito de náusea (que causa enjoo) por cegueira</td>
+      <td>🟢 Acessível - Não causa desconforto físico real</td>
+      <td>🟡 Similar - Mantém a dificuldade</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>🔥 Influência de Temperatura dos Blocos</strong>
+      </td>
+      <td>Alcance moderado (1.0)</td>
+      <td>Blocos quentes/frios afetam sua temperatura até certa distância</td>
+      <td>🟡 Realista - Fogueiras aquecem, gelo esfria</td>
+      <td>🟡 Balanceado - Não muito extremo</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💧 Água Finita</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Fontes de água não se regeneram automaticamente</td>
+      <td>🔴 Muito Difícil - Requer gestão cuidadosa de água</td>
+      <td>🔴 Extremo - Mudança radical no gameplay</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>💀 Manter Status Após Morte</strong>
+      </td>
+      <td>Desativado ❌</td>
+      <td>Seus status (temperatura, hidratação) resetam ao morrer</td>
+      <td>🟢 Mais Fácil - Segunda chance após erro</td>
+      <td>🟡 Gameplay - Menos punitivo</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>👕 Mostrar Equipamentos 3D</strong>
+      </td>
+      <td>Ativado ✅</td>
+      <td>Mostra armaduras e itens equipados no modelo do personagem</td>
+      <td>🟢 Visual - Melhora a imersão</td>
+      <td>🟢 Baixo - Pouco impacto</td>
+    </tr>
+  </tbody>
+</table> 
+
+---
+
+<table>
+  <caption><h2> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ🎨 Legenda de Cores</h2></caption>
+  <tr>
+    <td>🟢 <strong>Verde</strong>
+    </td>
+    <td>Impacto positivo ou neutro na experiência</td>
+  </tr>
+  <tr>
+    <td>🟡 <strong>Amarelo</strong>
+    </td>
+    <td>Impacto moderado, requer atenção</td>
+  </tr>
+  <tr>
+    <td>🔴 <strong>Vermelho</strong>
+    </td>
+    <td>Impacto significativo ou alto nível de dificuldade</td>
+  </tr>
+  <tr>
+    <td>✅ <strong>Ativado</strong>
+    </td>
+    <td>Funcionalidade ligada</td>
+  </tr>
+  <tr>
+    <td>❌ <strong>Desativado</strong>
+    </td>
+    <td>Funcionalidade desligada</td>
+  </tr>
+</table>
+
+---
+
+#### 📝 Notas Importantes para Jogadores
+
+> [!WARNING]
+> **⚠️ Atenção com estas configurações:**\
+> 💧 Água Finita está **``ATIVADA``** - Fontes de água NÃO se regeneram! Planeje farms e estoques.\
+> 🥶 Congelamento Permanente está **``ATIVADO``** - Danos por frio extremo podem ser irreversíveis.\
+> 💨 Gases estão **``ATIVADOS``** - Cuidado em cavernas e áreas fechadas, podem haver gases tóxicos ou explosivos.
+
+> [!TIP]
+> **🎮 Dicas de Sobrevivência:**\
+> Sempre carregue água - Com água finita, cada gota conta\
+> Use roupas adequadas - Biomas extremos são perigosos\
+> Monitore seus status - Fique de olho na tela para evitar problemas\
+> Em cavernas, teste com tochas antes de avançar - gases podem ser invisíveis\
+> Construa abrigos contra temperaturas extremas
+
+> [!TIP]
+> **🔧 Para Sugerir Mudanças:**
+> Se alguma configuração estiver muito difícil ou causando problemas, você pode sugerir alterações mencionando:
+> - Nome da configuração (da tabela acima)
+> - Problema encontrado
+> - Sugestão de valor diferente
+
+> [!IMPORTANT]
+> Abra um **issue** para destacar, sugerir ou reportar algum problema por aqui: **[EtheriusCraft - Chrono Anchor | Issues](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/issues)**\
+> Ou abra um **Ticket** e informe o problema ou sugestão através do Discord: **[EtheriusCraft — Network](https://discord.gg/7KAvZgztgu)**\
+> Sua sugestão e participação é muito importante para nós! Nos ajude a desenvolver um ambiente que seja divertido a todos!
+
+---
+
+> [!CAUTION]
+> **GALERIA DO CHANGELOG**
+> Considere acessar todo o álbum de prints do modpack através da **[Galeria do Modpack](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/tree/main/gallery)**
+
+---
+
+<div align="center">
+	<h2 align="center"><strong><code>Desenvolvido por</code></strong></h2>
+	<blockquote>
+		<p>
+			<a href="https://pt.namemc.com/profile/YukiriDensuki.1" target="_blank">
+				<img height="32" width="32" alt="YukiriDensuki Head" src="https://mc-heads.net/avatar/YukiriDensuki"/>
+			</a>
+			<strong><a href="https://github.com/Densuki">  YukiriDensuki</a> | Minecraft Programmer, Illustrator & Modeling 3D</strong>
+			</br>
+			<a href="https://pt.namemc.com/profile/Athropos" target="_blank">
+				<img height="32" width="32" alt="Athropos Head" src="https://mc-heads.net/avatar/Athropos"/>
+			</a>
+			<strong><a href="https://github.com/RyutaSK">  Athropos</a> | Minecraft Programmer, Story Maker & Quest Maker</strong>
+		</p>
+	</blockquote>
+</div>
+
+<div align="center">
+	<h2 align="center"><strong><code>Parceria</code></strong></h2>
+	<blockquote>
+		<p>
+			<!-- <a href="https://pt.namemc.com/profile/SrYthan.1" target="_blank"> -->
+			<a href="https://discord.gg/8frSM4m" target="_blank">
+				<img height="32" width="32" alt="SrYthan Head" src="https://mc-heads.net/avatar/SrYthan"/>
+			</a>
+			<strong><a href="https://github.com/SrYthan">  yThan</a> | <ins>Dono da TotalCraft</ins></strong>
+			</br>
+			<strong><a href="https://discord.gg/8frSM4m" target="_blank">TotalCraft Discord</a></strong>
+		</p>
+	</blockquote>
+</div>
+
+---
+
+> [!IMPORTANT]
+> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAtenciosamente, Equipe ***EtheriusCraft — Network ©***.
 
 ---
 
