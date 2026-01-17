@@ -11,7 +11,7 @@
 |---|---|
 |**1º**|[Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#%EF%B8%8F-otimiza%C3%A7%C3%A3o--geral)|
 |**2º**|[Aba - Mods](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-mods)|
-|**3º**|[Aba - Alterações](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#altera%C3%A7%C3%B5es)|
+|**3º**|[Aba - Alterações](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-altera%C3%A7%C3%B5es)|
 |**4º**|[Alerta de Log](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--alerta-de-log-n%C3%A3o-cr%C3%ADtico)|
 |**5º**|[Mudanças de Configuração](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--mudan%C3%A7as-de-configura%C3%A7%C3%A3o)|
 |**6º**|[Entidades](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--entidades)|
@@ -344,5 +344,6 @@ RD = Fator_Dificuldade_Mundo × (1 + (Tempo_Total_Jogo / 100h))
 ## Links & Referências
 
 - [Retornar pro Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#001)
+- [Patch BETA - 0.0.1 | Notes]()
 
 ---
