@@ -1,14 +1,35 @@
+<!-- 
+## ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ💡 Features & Alterações:
 # ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ``Otimização & Ajustes``
+-->
 
-## [Patch BETA - 0.0.1]
+ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Micro+5&size=40&pause=1000&color=880EF7&center=true&vCenter=true&width=435&lines=Otimiza%C3%A7%C3%A3o+%26+Ajustes)](https://git.io/typing-svg)
+ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤ ㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta)](https://git.io/typing-svg)
+
+# [0.0.1]
+|**Nº**|Hyperlinks Interativos|
+|---|---|
+|**1º**|[Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#%EF%B8%8F-otimiza%C3%A7%C3%A3o--geral)|
+|**2º**|[Aba - Mods](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-mods)|
+|**3º**|[Aba - Alterações](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#altera%C3%A7%C3%B5es)|
+|**4º**|[Alerta de Log](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--alerta-de-log-n%C3%A3o-cr%C3%ADtico)|
+|**5º**|[Mudanças de Configuração](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--mudan%C3%A7as-de-configura%C3%A7%C3%A3o)|
+|**6º**|[Entidades](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-otimiza%C3%A7%C3%A3o--entidades)|
+|**7º**|[COMBATE — Escalonamento Dinâmico](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#%EF%B8%8F-combate--escalonamento-din%C3%A2mico)|
+|**8º**|[ESCALONAMENTO — Fórmula de Dificuldade](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-escalonamento--f%C3%B3rmula-de-dificuldade)|
+|**9º**|[Desafios Para o Jogador](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-impacto--para-o-jogador-desafios)|
+|**10º**|[Vantagens Para o Jogador](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-impacto--para-o-jogador-vantagens)|
+|**11º**|[Impacto Para as Entidades](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#%EF%B8%8F-impacto--para-as-entidades-zombies)|
+|**12º**|[Tabela de Evolução](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#-%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4%E3%85%A4-tabela-de-evolu%C3%A7%C3%A3o-do-zombie)|
+|**13º**|[Galeria do Changelog](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/tree/main/gallery)|
+
+# 🧩 『MODS』
 
 ---
 
-## 🧩 『MODS』
+## ⚙️ OTIMIZAÇÃO — Geral
 
-### ⚙️ OTIMIZAÇÃO — Geral
-
-🧠 @Densuki
+🧠 **[Densuki](https://github.com/Densuki)**:
 > Mod dedicado exclusivamente à otimização do servidor.
 
 - Reconfigurado para evitar conflitos com o Mekanism
@@ -34,7 +55,7 @@ Minecraft loaded a new chunk [X Pos, Z Pos] in dimension 0 while populating chun
 - Corrige cascading worldgen no vanilla
 - Pode afetar compatibilidade de seeds
 
-💬 @Densuki  
+💬 **[Densuki](https://github.com/Densuki)**:  
 > Não é um erro crítico, mas flooda o console e logs.  
 > Mantido para debug (sim, sou contraditório 😅).
 
@@ -145,12 +166,14 @@ Valores testados:
 - Combates inconsistentes
 - Agricultura animal afetada
 
-💬 @Densuki
+💬 **[Densuki](https://github.com/Densuki)**:
 > Caso 2304 seja agressivo, considerar 16384 ou retorno ao padrão.
 
 ---
 
-## ♻『ALTERAÇÕES』
+## ♻ 『ALTERAÇÕES』
+
+---
 
 ### ``Combate & Progressão``
 
@@ -166,7 +189,7 @@ Valores testados:
   - 🌑 Zonas hostis e desoladas
   - 🎮 Experiência RPG de alto risco
 
-💬 @Densuki  
+💬 **[Densuki](https://github.com/Densuki)**:  
 > Boa sorte explorando dungeons ou montando farms 😈  
 > Isso também afeta bosses, eventos e entidades avulsas.
 
@@ -264,8 +287,62 @@ RD = Fator_Dificuldade_Mundo × (1 + (Tempo_Total_Jogo / 100h))
 	</tbody>
 </table>
 
+> [!WARNING]
+> **Nota:**
+> - Isso é apenas um parâmetro baseado no Vanilla com o Zombie...
+> - Tenha isso apenas como uma base!
+> - Poderá mudar, seja para pior ou melhor de acordo com os futuros Patchs.
+> - O objetivo é enriquecer a I.A. das entidades e tornar mais desafiador.
+
+---
+
+> [!CAUTION]
+> **GALERIA DO CHANGELOG**
+> Considere acessar todo o álbum de prints do modpack através da **[Galeria do Modpack](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/tree/main/gallery)**
+
+---
+
+<div align="center">
+	<h2 align="center"><strong><code>Desenvolvido por</code></strong></h2>
+	<blockquote>
+		<p>
+			<a href="https://pt.namemc.com/profile/YukiriDensuki.1" target="_blank">
+				<img height="32" width="32" alt="YukiriDensuki Head" src="https://mc-heads.net/avatar/YukiriDensuki"/>
+			</a>
+			<strong><a href="https://github.com/Densuki">  YukiriDensuki</a> | Minecraft Programmer, Illustrator & Modeling 3D</strong>
+			</br>
+			<a href="https://pt.namemc.com/profile/Athropos" target="_blank">
+				<img height="32" width="32" alt="Athropos Head" src="https://mc-heads.net/avatar/Athropos"/>
+			</a>
+			<strong><a href="https://github.com/RyutaSK">  Athropos</a> | Minecraft Programmer, Story Maker & Quest Maker</strong>
+		</p>
+	</blockquote>
+</div>
+
+<div align="center">
+	<h2 align="center"><strong><code>Parceria</code></strong></h2>
+	<blockquote>
+		<p>
+			<!-- <a href="https://pt.namemc.com/profile/SrYthan.1" target="_blank"> -->
+			<a href="https://discord.gg/8frSM4m" target="_blank">
+				<img height="32" width="32" alt="SrYthan Head" src="https://mc-heads.net/avatar/SrYthan"/>
+			</a>
+			<strong><a href="https://github.com/SrYthan">  yThan</a> | <ins>Dono da TotalCraft</ins></strong>
+			</br>
+			<strong><a href="https://discord.gg/8frSM4m" target="_blank">TotalCraft Discord</a></strong>
+		</p>
+	</blockquote>
+</div>
+
+---
+
+> [!IMPORTANT]
+> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAtenciosamente, Equipe ***EtheriusCraft — Network ©***.
+
 ---
 
 ## Links & Referências
+
+- [Retornar pro Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/Otimization/Patch%20BETA%20-%200.0.1.md#001)
 
 ---
