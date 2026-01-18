@@ -1,3 +1,7 @@
+ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Micro+5&size=40&pause=1000&color=880EF7&center=true&vCenter=true&width=435&lines=EtheriusCraft+-+Status)](https://git.io/typing-svg)
+ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta+Notes)](https://git.io/typing-svg)
+ ## [0.0.1 - Notes nº 1]
+
 # 🔄 Comparativo de Configurações: Inicial vs Atual
 
 ## 📊 Resumo das Principais Alterações
