@@ -2,6 +2,10 @@
  ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta+Notes)](https://git.io/typing-svg)
  ## [0.0.1 - Notes nº 1]
 
+|**Nº**|Hyperlinks Interativos|
+|---|---|
+|**1º**|[Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1%20notes%20n%C2%BA1.md)|
+
 # 🔄 Comparativo de Configurações: Inicial vs Atual
 
 ## 📊 Resumo das Principais Alterações
@@ -297,5 +301,5 @@ I:"Physics Interval"=20
 ---
 
 ## Links & Referências
-
+[Retornar pro Início](https://github.com/EtheriusCraft-Network/EtheriusCraft-Chrono_Anchor/blob/main/patch/EtheriusCraft%20-%20Status/Patch%20BETA%20-%200.0.1%20notes%20n%C2%BA1.md)
 ---
