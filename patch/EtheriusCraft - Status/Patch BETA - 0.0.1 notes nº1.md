@@ -1,5 +1,10 @@
- ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Micro+5&size=40&pause=1000&color=880EF7&center=true&vCenter=true&width=435&lines=EtheriusCraft+-+Status)](https://git.io/typing-svg)
- ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta+Notes)](https://git.io/typing-svg)
+<div align="center">
+  <a href="#"><img src="https://readme-typing-svg.herokuapp.com?font=Micro+5&size=40&pause=1000&color=880EF7&center=true&vCenter=true&width=435&lines=EtheriusCraft+-+Status" alt="Typing SVG" /></a>
+  </br>
+  <a href="#"><img src="https://readme-typing-svg.herokuapp.com?font=Jacquard+12&size=40&pause=1000&color=00F7E4&center=true&vCenter=true&width=435&lines=Patch+-+Beta+Notes" alt="Typing SVG" /></a>
+  </hr>
+</div>
+
  ## [0.0.1 - Notes nº 1]
 
 |**Nº**|Hyperlinks Interativos|
@@ -11,112 +16,100 @@
 ## 📊 Resumo das Principais Alterações
 
 <table>
-<thead>
-<tr>
-<th>Categoria</th>
-<th>Configuração</th>
-<th>Versão Inicial</th>
-<th>Versão Atual</th>
-<th>Mudança</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td rowspan="3"><strong>💨 Gases</strong></td>
-<td><strong>Limite de Processamento</strong><br><em>(Gas Pass Limit)</em></td>
-<td>Ilimitado (-1)</td>
-<td>48 gases</td>
-<td>🔽 <strong>Reduzido drasticamente</strong></td>
-<td>✅ Menor lag em áreas com muitos gases</td>
-</tr>
-
-<tr>
-<td><strong>Velocidade de Atualização</strong><br><em>(Gas Tick Rate)</em></td>
-<td>32 ticks (1.6s)</td>
-<td>80 ticks (4.0s)</td>
-<td>⏱️ <strong>Mais lento (2.5x)</strong></td>
-<td>✅ 60% menos processamento de gases</td>
-</tr>
-
-<tr>
-<td><strong>Espalhamento Tipo Água</strong><br><em>(Water like spreading)</em></td>
-<td>Ativado (true)</td>
-<td>Desativado (false)</td>
-<td>🔄 <strong>Mudou para difusão realista</strong></td>
-<td>✅ Menos cálculos complexos</td>
-</tr>
-
-<tr>
-<td rowspan="3"><strong>⚖️ Física</strong></td>
-<td><strong>Atraso em Novas Áreas</strong><br><em>(Chunk Physics Delay)</em></td>
-<td>1000 ticks (50s)</td>
-<td>2000 ticks (100s)</td>
-<td>⏳ <strong>Dobrou o tempo de espera</strong></td>
-<td>✅ Menos picos ao entrar em novas áreas</td>
-</tr>
-
-<tr>
-<td><strong>Limite de Blocos Atualizados</strong><br><em>(Consecutive Physics Update Cap)</em></td>
-<td>128 blocos</td>
-<td>64 blocos</td>
-<td>🔽 <strong>Reduzido pela metade</strong></td>
-<td>✅ Colapsos acontecem em etapas menores</td>
-</tr>
-
-<tr>
-<td><strong>Frequência da Física</strong><br><em>(Physics Interval)</em></td>
-<td>6 ticks (0.3s)</td>
-<td>12 ticks (0.6s)</td>
-<td>⏱️ <strong>Metade da frequência</strong></td>
-<td>✅ 50% menos processamento de física</td>
-</tr>
-
-<tr>
-<td rowspan="2"><strong>🗺️ Mundo</strong></td>
-<td><strong>Minas em Vilas</strong><br><em>(Enable Village MineShafts)</em></td>
-<td>Ativado (true)</td>
-<td>Desativado (false)</td>
-<td>❌ <strong>Removido</strong></td>
-<td>✅ Geração de mundo mais rápida</td>
-</tr>
-
-<tr>
-<td><strong>Poder de Influência de Temperatura</strong><br><em>(Block Temperature Dropoff Power)</em></td>
-<td>0.75</td>
-<td>1.0</td>
-<td>📈 <strong>Aumentado</strong></td>
-<td>⚖️ Temperatura mais previsível</td>
-</tr>
-
-<tr>
-<td><strong>💧 Sobrevivência</strong></td>
-<td><strong>Água Finita</strong><br><em>(Finite Water)</em></td>
-<td>Desativado (false)</td>
-<td>Ativado (true)</td>
-<td>✅ <strong>Ativado (Mudança Radical)</strong></td>
-<td>🔴 Gameplay muito mais difícil</td>
-</tr>
-
-<tr>
-<td rowspan="2"><strong>📝 Sistema</strong></td>
-<td><strong>Verbosidade do Log</strong><br><em>(Logger Verbosity)</em></td>
-<td>2 (Médio)</td>
-<td>1 (Mínimo)</td>
-<td>🔽 <strong>Reduzido</strong></td>
-<td>✅ Menos spam no console do servidor</td>
-</tr>
-
-<tr>
-<td><strong>Atraso no Início do Mundo</strong><br><em>(World Start Delay)</em></td>
-<td>1000 ticks (50s)</td>
-<td>3000 ticks (150s)</td>
-<td>⏳ <strong>Triplicado</strong></td>
-<td>✅ Início mais estável</td>
-</tr>
-
-</tbody>
+	<thead>
+		<tr>
+			<th>Categoria</th>
+			<th>Configuração</th>
+			<th>Versão Inicial</th>
+			<th>Versão Atual</th>
+			<th>Mudança</th>
+			<th>Impacto</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>💨 Gases</strong></td>
+			<td><strong>Limite de Processamento</strong><br><em>(Gas Pass Limit)</em></td>
+			<td>Ilimitado (-1)</td>
+			<td>48 gases</td>
+			<td>🔽 <strong>Reduzido drasticamente</strong></td>
+			<td>✅ Menor lag em áreas com muitos gases</td>
+		</tr>
+		<tr>
+			<td><strong>Velocidade de Atualização</strong><br><em>(Gas Tick Rate)</em></td>
+			<td>32 ticks (1.6s)</td>
+			<td>80 ticks (4.0s)</td>
+			<td>⏱️ <strong>Mais lento (2.5x)</strong></td>
+			<td>✅ 60% menos processamento de gases</td>
+		</tr>
+		<tr>
+			<td><strong>Espalhamento Tipo Água</strong><br><em>(Water like spreading)</em></td>
+			<td>Ativado (true)</td>
+			<td>Desativado (false)</td>
+			<td>🔄 <strong>Mudou para difusão realista</strong></td>
+			<td>✅ Menos cálculos complexos</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>⚖️ Física</strong></td>
+			<td><strong>Atraso em Novas Áreas</strong><br><em>(Chunk Physics Delay)</em></td>
+			<td>1000 ticks (50s)</td>
+			<td>2000 ticks (100s)</td>
+			<td>⏳ <strong>Dobrou o tempo de espera</strong></td>
+			<td>✅ Menos picos ao entrar em novas áreas</td>
+		</tr>
+		<tr>
+			<td><strong>Limite de Blocos Atualizados</strong><br><em>(Consecutive Physics Update Cap)</em></td>
+			<td>128 blocos</td>
+			<td>64 blocos</td>
+			<td>🔽 <strong>Reduzido pela metade</strong></td>
+			<td>✅ Colapsos acontecem em etapas menores</td>
+		</tr>
+		<tr>
+			<td><strong>Frequência da Física</strong><br><em>(Physics Interval)</em></td>
+			<td>6 ticks (0.3s)</td>
+			<td>12 ticks (0.6s)</td>
+			<td>⏱️ <strong>Metade da frequência</strong></td>
+			<td>✅ 50% menos processamento de física</td>
+		</tr>
+		<tr>
+			<td rowspan="2"><strong>🗺️ Mundo</strong></td>
+			<td><strong>Minas em Vilas</strong><br><em>(Enable Village MineShafts)</em></td>
+			<td>Ativado (true)</td>
+			<td>Desativado (false)</td>
+			<td>❌ <strong>Removido</strong></td>
+			<td>✅ Geração de mundo mais rápida</td>
+		</tr>
+		<tr>
+			<td><strong>Poder de Influência de Temperatura</strong><br><em>(Block Temperature Dropoff Power)</em></td>
+			<td>0.75</td>
+			<td>1.0</td>
+			<td>📈 <strong>Aumentado</strong></td>
+			<td>⚖️ Temperatura mais previsível</td>
+		</tr>
+		<tr>
+			<td><strong>💧 Sobrevivência</strong></td>
+			<td><strong>Água Finita</strong><br><em>(Finite Water)</em></td>
+			<td>Desativado (false)</td>
+			<td>Ativado (true)</td>
+			<td>✅ <strong>Ativado (Mudança Radical)</strong></td>
+			<td>🔴 Gameplay muito mais difícil</td>
+		</tr>
+		<tr>
+			<td rowspan="2"><strong>📝 Sistema</strong></td>
+			<td><strong>Verbosidade do Log</strong><br><em>(Logger Verbosity)</em></td>
+			<td>2 (Médio)</td>
+			<td>1 (Mínimo)</td>
+			<td>🔽 <strong>Reduzido</strong></td>
+			<td>✅ Menos spam no console do servidor</td>
+		</tr>
+		<tr>
+			<td><strong>Atraso no Início do Mundo</strong><br><em>(World Start Delay)</em></td>
+			<td>1000 ticks (50s)</td>
+			<td>3000 ticks (150s)</td>
+			<td>⏳ <strong>Triplicado</strong></td>
+			<td>✅ Início mais estável</td>
+		</tr>
+	</tbody>
 </table>
 
 ## 🎯 Análise das Mudanças por Categoria
